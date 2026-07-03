@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Brian</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/i18next/dist/umd/i18next.js"></script>
+    <style>
+        /* Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.7s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 overflow-x-hidden font-roboto text-gray-900">
+
+    <!-- HERO SECTION -->
+    <header class="relative flex flex-col bg-linear-to-r from-blue-500 to-purple-600 py-24 text-white reveal">
+        <!-- LANGUAGE SWITCHER ENGLISH - SPANISH -->
+        <div class="top-4 right-4 sm:top-6 sm:right-6 z-10 absolute">
+            <button id="language" type="button" language="spanish"
+                    class="flex items-center gap-2 bg-white/15 hover:bg-white/25 shadow-lg shadow-black/10 backdrop-blur-md px-5 py-2.5 border border-white/30 rounded-full font-semibold text-sm tracking-wide hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-blue-500">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9S14.5 18.5 12 21M12 3C9.5 5.5 8.2 8.5 8.2 12S9.5 18.5 12 21"></path>
+                </svg>
+                <span id="language-label">English</span>
+            </button>
+        </div>
+        
+        <div class="mx-auto text-center container">
+            <h1 class="drop-shadow-md font-bold text-5xl tracking-wide">Brian Perez Perez</h1>
+            <p class="opacity-90 mt-4 text-xl" id="role">Desarrollador web freelance</p>
+
+            <div class="flex justify-center gap-10 mt-8">
+                <a href="https://github.com/brianpr-pr" target="_blank"
+                   class="text-3xl hover:scale-110 transition-transform">
+                   <img src="public/github-mark/github-mark-white.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="bg-white py-20 reveal">
+        <div class="mx-auto text-center container">
+            <h2 class="mb-6 font-semibold text-4xl" id="about-me">Sobre Mí</h2>
+            <p class="mx-auto max-w-3xl text-lg leading-relaxed" id="personal-information">
+                Soy Brian Perez Perez, un desarrollador web freelance de España que crea aplicaciones web para negocios que buscan mejorar su
+                presencia online, aumentar su visibilidad y atraer más clientes. Desarrollo sitios web que permiten a los propietarios gestionar
+                fácilmente el contenido de su página, sin tener que encargarse del alojamiento ni del mantenimiento web.
+            </p>
+        </div>
+    </section> 
+
+    <!-- SOCIAL MEDIA -->
+    <section id="social" class="bg-gray-50 py-20 reveal">
+        <div class="mx-auto px-6 text-center container">
+            <h2 class="mb-10 font-semibold text-4xl" id="social-media">Redes Sociales</h2>
+
+            <div class="gap-8 grid sm:grid-cols-2 mx-auto max-w-3xl">
+                <a href="mailto:brian23perezperez@gmail.com"
+                   class="bg-white shadow-sm hover:shadow-md p-6 rounded-xl transition-all hover:-translate-y-1">
+                    <h3 class="font-semibold text-xl" id="social-email">Correo electrónico</h3>
+                    <p class="mt-2 text-blue-600 break-all">brian23perezperez@gmail.com</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/brian-perez-perez/" target="_blank" rel="noopener noreferrer"
+                   class="bg-white shadow-sm hover:shadow-md p-6 rounded-xl transition-all hover:-translate-y-1">
+                    <h3 class="font-semibold text-xl">LinkedIn</h3>
+                    <p class="mt-2 text-blue-600 break-all">linkedin.com/in/brian-perez-perez</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="bg-white py-20 reveal">
+        <div class="mx-auto text-center container">
+            <h2 class="mb-10 font-semibold text-4xl" id="skills-technologies">Habilidades y Tecnologías</h2>
+
+            <div class="gap-8 grid sm:grid-cols-2 md:grid-cols-3">
+
+                <div class="bg-gray-100 shadow-sm hover:shadow-md p-6 rounded-xl transition-all reveal">
+                    <h4 class="font-semibold text-xl" id="languages">Lenguajes</h4>
+                    <p class="mt-2 text-gray-600">JavaScript, Typescript, PHP, HTML, CSS</p>
+                </div>
+
+                <div class="bg-gray-100 shadow-sm hover:shadow-md p-6 rounded-xl transition-all reveal">
+                    <h4 class="font-semibold text-xl">Frameworks</h4>
+                    <p class="mt-2 text-gray-600">Laravel, Tailwind, React</p>
+                </div>
+
+                <div class="bg-gray-100 shadow-sm hover:shadow-md p-6 rounded-xl transition-all reveal">
+                    <h4 class="font-semibold text-xl" id="tools">Tecnología</h4>
+                    <p class="mt-2 text-gray-600">Git, Wordpress</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-600 py-10 text-white text-center reveal">
+        <p class="mb-2">
+            <a href="https://example.com">Portfolio</a> © 2025 <span id="footer-by">de</span>
+            <a href="https://example.com">Brian Perez Perez</a> <span id="footer-license">está bajo la licencia</span>
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>
+        </p>
+
+        <!-- Icons row -->
+        <div class="flex justify-center items-center space-x-2">
+            <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="w-4 h-4">
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="w-4 h-4">
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="w-4 h-4">
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="ND" class="w-4 h-4">
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="src/animations.js"></script>
+    <script src="src/translator.js"></script>
+</body>
+</html>
