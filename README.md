@@ -8,7 +8,7 @@ Mi objetivo es desarrollar soluciones claras, modernas y fáciles de mantener. T
 
 ### Sitio web
 
-[Visitar el portfolio](https://brianpr-pr.github.io/Portfolio/)
+[Visitar el portfolio](https://brianpr-pr.github.io/Portfolio-Web/)
 
 ### Contenido y características
 
@@ -31,7 +31,7 @@ Mi objetivo es desarrollar soluciones claras, modernas y fáciles de mantener. T
 ### Ejecución local
 
 ```bash
-git clone https://github.com/brianpr-pr/Portfolio.git
+git clone https://github.com/brianpr-pr/Portfolio-Web.git
 cd Portfolio
 npm install
 ```
@@ -58,7 +58,7 @@ My goal is to create clear, modern, and maintainable solutions. I also build web
 
 ### Website
 
-[Visit the portfolio](https://brianpr-pr.github.io/Portfolio/)
+[Visit the portfolio](https://brianpr-pr.github.io/Portfolio-Web/)
 
 ### Content and features
 
@@ -81,7 +81,7 @@ My goal is to create clear, modern, and maintainable solutions. I also build web
 ### Local setup
 
 ```bash
-git clone https://github.com/brianpr-pr/Portfolio.git
+git clone https://github.com/brianpr-pr/Portfolio-Web.git
 cd Portfolio
 npm install
 ```
